@@ -148,7 +148,8 @@
   <ParallaxImage
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/6.jpg"
   />
-  <Contact/>
+  <Contact />
+  <Footer />
 </template>
 
 <script lang="ts">
@@ -160,7 +161,8 @@ import Title from "./components/Title.vue";
 import Content from "./components/Content.vue";
 import SlidesSection from "./components/SlidesSection.vue";
 import Container from "./components/Container.vue";
-import Contact from './components/Contact.vue';
+import Contact from "./components/Contact.vue";
+import Footer from "./components/Footer.vue";
 
 export default defineComponent({
   name: "App",
@@ -171,32 +173,33 @@ export default defineComponent({
     Title,
     SlidesSection,
     Container,
-    Contact
+    Contact,
+    Footer,
   },
 });
 </script>
 
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+<style lang="sass">
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap")
 
-body {
-  font-family: sans-serif;
-}
+body
+  font-family: sans-serif
 
-p {
-  color: #777777;
-  margin-bottom: 1rem;
-}
+p
+  color: #777777
+  margin-bottom: 1rem
 
-strong {
-  color: #000;
-}
+strong
+  color: #000
 
-a[href^="mailto"] {
-  color: #303133;
-  transition: 0.3s;
-  outline: none;
-  box-shadow: none;
-  text-decoration: none;
-}
+a[href^="mailto"]
+  color: #303133
+  transition: 0.3s
+  outline: none
+  box-shadow: none
+  text-decoration: none
+
+.container
+  h2,h3,h4
+    margin-bottom: 30px
 </style>

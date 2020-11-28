@@ -1,20 +1,30 @@
 <template>
-  <div class="container">
-    <slot></slot>
+  <div class="container-fluid" :class="[className]">
+    <div class="container">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
 
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Container",
+  props: {
+    class: String,
+  },
+  setup: ({ class: className }) => {
+    return { className };
+  },
 });
 </script>
 
-<style scoped>
-.container {
-  padding: 40px 0;
-}
+<style lang='sass' scoped>
+.container-fluid
+  padding: 40px 0
+.container
+  padding: 0
 </style>
+

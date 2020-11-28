@@ -99,10 +99,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
-h2 {
-  margin-bottom: 30px;
-}
 ul li {
   color: #777777;
   font-size: 15px;
