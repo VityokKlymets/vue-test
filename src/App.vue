@@ -1,6 +1,15 @@
 <template>
   <TopHeader
     logoImage="http://blumen.varion.net/wp-content/uploads/2020/11/Logo_Carpe-Diem_Website-2-uai-720x212-1.png"
+    :links="[
+      { href: '#hochzeit', text: 'Hochzeit' },
+      { href: '#trauerfloristik', text: 'Trauerfloristik' },
+      { href: '#wohnambiente', text: 'Wohnambiente' },
+      { href: '#advent', text: 'Advent' },
+      { href: '#kontakt', text: 'Kontakt & Anfahrt' },
+      { href: '#impressum', text: 'Impressum' },
+      { href: '#datenschutz', text: 'Datenschutz' },
+    ]"
   >
   </TopHeader>
   <ParallaxImage
@@ -98,7 +107,7 @@
   <ParallaxImage
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/5.jpg"
   />
-   <SlidesSection
+  <SlidesSection
     title="Advent"
     sectionText="Schöne Kränze und Gestecke zur Vorweihnachtszeit"
     :slides="[
@@ -123,7 +132,7 @@
       Damit Ihre Hochzeit der schönste Tag in Ihrem Leben wird.
     </p>
   </SlidesSection>
-   <ParallaxImage
+  <ParallaxImage
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/6.jpg"
   />
 </template>
