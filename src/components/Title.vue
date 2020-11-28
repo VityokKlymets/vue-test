@@ -29,7 +29,12 @@ export default defineComponent({
   color: white;
   width: 100%;
 }
-
+h1 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
 h1,
 h3 {
   font-family: "Architects Daughter", sans-serif;

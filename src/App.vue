@@ -148,6 +148,7 @@
   <ParallaxImage
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/6.jpg"
   />
+  <Contact/>
 </template>
 
 <script lang="ts">
@@ -159,6 +160,7 @@ import Title from "./components/Title.vue";
 import Content from "./components/Content.vue";
 import SlidesSection from "./components/SlidesSection.vue";
 import Container from "./components/Container.vue";
+import Contact from './components/Contact.vue';
 
 export default defineComponent({
   name: "App",
@@ -169,6 +171,7 @@ export default defineComponent({
     Title,
     SlidesSection,
     Container,
+    Contact
   },
 });
 </script>
@@ -179,16 +182,21 @@ export default defineComponent({
 body {
   font-family: sans-serif;
 }
-h1 {
-  font-size: 4rem;
-}
-
-h3 {
-  font-size: 3rem;
-}
 
 p {
   color: #777777;
   margin-bottom: 1rem;
+}
+
+strong {
+  color: #000;
+}
+
+a[href^="mailto"] {
+  color: #303133;
+  transition: 0.3s;
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
 }
 </style>

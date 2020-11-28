@@ -99,12 +99,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.container {
-  padding: 40px 0;
-}
-strong {
-  color: #000;
-}
+
 h2 {
   margin-bottom: 30px;
 }
@@ -112,12 +107,5 @@ ul li {
   color: #777777;
   font-size: 15px;
   line-height: 1.75;
-}
-a {
-  color: #303133;
-  transition: 0.3s;
-  outline: none;
-  box-shadow: none;
-  text-decoration: none;
 }
 </style>
