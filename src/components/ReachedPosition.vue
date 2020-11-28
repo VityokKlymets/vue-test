@@ -7,7 +7,7 @@
 </template>
 
 <script lang='ts'>
-import { defineComponent, onMounted, onUnmounted, ref } from "vue";
+import { defineComponent, onMounted, onUnmounted, ref, toRefs } from "vue";
 // component that add additional classes to the container if user reached specific scroll position
 export default defineComponent({
   props: {
@@ -16,7 +16,8 @@ export default defineComponent({
     class: String,
     onClick: Function,
   },
-  setup: ({ positionY = 0, reachedClass, class: className }) => {
+  setup: (props) => {
+    const { positionY = 0, reachedClass, class: className } = toRefs(props);
     const isReached = ref(false);
     const handleScroll = () => {
       isReached.value = scrollY > positionY;

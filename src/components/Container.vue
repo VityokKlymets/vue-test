@@ -8,14 +8,15 @@
 
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, toRefs } from "vue";
 
 export default defineComponent({
   name: "Container",
   props: {
     class: String,
   },
-  setup: ({ class: className }) => {
+  setup: (props) => {
+    const { class: className } = toRefs(props);
     return { className };
   },
 });
@@ -24,5 +25,7 @@ export default defineComponent({
 <style lang='sass' scoped>
 .container-fluid
   padding: 40px 0
+.container
+  padding: 0
 </style>
 
