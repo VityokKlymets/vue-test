@@ -24,7 +24,5 @@ export default defineComponent({
 <style lang='sass' scoped>
 .container-fluid
   padding: 40px 0
-.container
-  padding: 0
 </style>
 

@@ -1,5 +1,9 @@
 <template>
-  <div :class="{ header_compressed: isReachedThePoint }" class="top__header">
+  <reached-position
+    :positionY="40"
+    reachedClass="header_compressed"
+    class="top__header"
+  >
     <a href="/" class="logo">
       <img :src="logoImage" alt="" class="logo__image" />
     </a>
@@ -12,11 +16,13 @@
         >{{ link.text }}</a
       >
     </nav>
-  </div>
+  </reached-position>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref, onMounted, onUnmounted } from "vue";
+
+import ReachedPosition from "@/components/ReachedPosition.vue";
 
 interface ILink {
   href: String;
@@ -26,24 +32,10 @@ interface ILink {
 const TopHeader = defineComponent({
   props: {
     logoImage: String,
-    compressPositionY: Number,
     links: Object as () => ILink[],
   },
-  setup: ({ compressPositionY = 40 }) => {
-    const isReachedThePoint = ref(false);
-
-    const scrollHandler = () => {
-      isReachedThePoint.value = scrollY > compressPositionY;
-    };
-    onMounted(() => {
-      window.addEventListener("scroll", scrollHandler);
-    });
-    onUnmounted(() => {
-      window.removeEventListener("scroll", scrollHandler);
-    });
-    return {
-      isReachedThePoint,
-    };
+  components: {
+    ReachedPosition,
   },
 });
 export default TopHeader;

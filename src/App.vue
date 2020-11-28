@@ -150,6 +150,8 @@
   />
   <Contact />
   <Footer />
+  <ScrollTopBtn />
+  
 </template>
 
 <script lang="ts">
@@ -163,6 +165,7 @@ import SlidesSection from "./components/SlidesSection.vue";
 import Container from "./components/Container.vue";
 import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
+import ScrollTopBtn from "./components/ScrollTopBtn.vue";
 
 export default defineComponent({
   name: "App",
@@ -175,6 +178,7 @@ export default defineComponent({
     Container,
     Contact,
     Footer,
+    ScrollTopBtn,
   },
 });
 </script>
