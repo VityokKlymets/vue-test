@@ -9,13 +9,17 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "jquery": "^3.5.1",
+    "jquery-parallax.js": "^1.5.0",
+    "owl.carousel": "^2.3.4",
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.4",
+    "@types/owl.carousel": "^2.3.2",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
