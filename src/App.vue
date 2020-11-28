@@ -24,7 +24,7 @@
   />
   <SlidesSection
     title="Hochzeit"
-    sectionText="Festliche Arrangements rund ums Jawort"
+    text="Festliche Arrangements rund ums Jawort"
     :slides="[
       'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg',
       'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg',
@@ -52,7 +52,7 @@
   />
   <SlidesSection
     title="Trauerfloristik"
-    sectionText="Stilvoll Abschied nehmen"
+    text="Stilvoll Abschied nehmen"
     :slides="[
       'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg',
       'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg',
@@ -81,7 +81,7 @@
 
   <SlidesSection
     title="Wohnambiente"
-    sectionText="Unsere Ideen für Ihr Zuhause"
+    text="Unsere Ideen für Ihr Zuhause"
     :slides="[
       'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg',
       'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg',
@@ -109,7 +109,7 @@
   />
   <SlidesSection
     title="Advent"
-    sectionText="Schöne Kränze und Gestecke zur Vorweihnachtszeit"
+    text="Schöne Kränze und Gestecke zur Vorweihnachtszeit"
     :slides="[
       'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg',
       'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg',
@@ -132,18 +132,33 @@
       Damit Ihre Hochzeit der schönste Tag in Ihrem Leben wird.
     </p>
   </SlidesSection>
+  <Container>
+    <div class="row justify-content-center">
+      <iframe
+        title="Adventskranz - außergewöhnlich und individuell selber machen"
+        width="500"
+        height="281"
+        src="https://www.youtube.com/embed/XMGNvZ9VBjc?feature=oembed"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen=""
+      ></iframe>
+    </div>
+  </Container>
   <ParallaxImage
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/6.jpg"
   />
 </template>
 
 <script lang="ts">
+import { defineComponent } from "vue";
+
 import ParallaxImage from "./components/ParallaxImage.vue";
 import TopHeader from "./components/TopHeader.vue";
 import Title from "./components/Title.vue";
 import Content from "./components/Content.vue";
 import SlidesSection from "./components/SlidesSection.vue";
-import { defineComponent } from "vue";
+import Container from "./components/Container.vue";
 
 export default defineComponent({
   name: "App",
@@ -153,6 +168,7 @@ export default defineComponent({
     Content,
     Title,
     SlidesSection,
+    Container,
   },
 });
 </script>

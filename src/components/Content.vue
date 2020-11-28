@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <Container>
     <div class="row pb-4">
       <div class="col-6">
         <h2>Liebe Kunden</h2>
@@ -80,17 +80,20 @@
         Uhr
       </p>
     </div>
-  </div>
+  </Container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+
 import Image from "./Image.vue";
+import Container from "./Container.vue";
 
 export default defineComponent({
   name: "Content",
   components: {
     Image,
+    Container,
   },
 });
 </script>
