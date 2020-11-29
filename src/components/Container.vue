@@ -1,5 +1,11 @@
 <template>
-  <div class="container-fluid" :class="[className]">
+  <div
+    :class="[
+      className,
+      'container-fluid',
+      { 'wow animate__animated animate__fadeInUp': animated },
+    ]"
+  >
     <div class="container">
       <slot></slot>
     </div>
@@ -14,6 +20,10 @@ export default defineComponent({
   name: "Container",
   props: {
     class: String,
+    animated: {
+      type: Boolean,
+      default: true,
+    },
   },
   setup: (props) => {
     const { class: className } = toRefs(props);

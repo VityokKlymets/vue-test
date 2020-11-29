@@ -48,6 +48,7 @@ const TopHeader = defineComponent({
 
     const burgerClickHandler = () => {
       isActive.value = !isActive.value;
+      document.body.className = isActive.value ? "lock" : "";
     };
 
     return {

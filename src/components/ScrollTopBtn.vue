@@ -21,7 +21,7 @@ export default defineComponent({
   components: { ReachedPosition },
   setup: () => {
     const onClick = () => {
-      window.scrollTo(0, 0);
+      window.scrollTo({top: 0, behavior: 'smooth'});
     };
     return { onClick };
   },

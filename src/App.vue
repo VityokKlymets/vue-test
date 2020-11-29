@@ -161,7 +161,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, onMounted } from "vue";
 
 import ParallaxImage from "./components/ParallaxImage.vue";
 import TopHeader from "./components/TopHeader.vue";
@@ -172,6 +172,9 @@ import Container from "./components/Container.vue";
 import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
 import ScrollTopBtn from "./components/ScrollTopBtn.vue";
+
+// @ts-ignore
+import WOW from 'wow.js'
 
 export default defineComponent({
   name: "App",
@@ -186,6 +189,11 @@ export default defineComponent({
     Footer,
     ScrollTopBtn,
   },
+  setup:()=>{
+    onMounted(()=>{
+       new WOW().init();
+    })
+  }
 });
 </script>
 
@@ -194,7 +202,10 @@ export default defineComponent({
 
 body
   font-family: sans-serif
-
+  scroll-behavior: smooth
+  @media (max-width:992px)
+    &.lock
+      overflow: hidden
 p
   color: #777777
   margin-bottom: 1rem

@@ -1,6 +1,10 @@
 <template>
   <div ref="container" class="owl-carousel owl-theme">
-    <div class="slide" v-for="(src, index) in slides" :key="index">
+    <div
+      :class="['slide wow animate__animated animate__fadeInUp',`animate__delay-${index*200}ms`]"
+      v-for="(src, index) in slides"
+      :key="index"
+    >
       <img alt="" :src="src" />
     </div>
   </div>
@@ -50,11 +54,16 @@ export default defineComponent({
 </script>
 
 <style lang='sass' scoped>
-img
-  height: 200px
-  object-fit: cover
-  transform: scale(1)
-  transition-duration: 1s
-  @media (max-width: 992px)
-    height: 150px
+.slide
+  overflow: hidden
+  img
+    height: 200px
+    object-fit: cover
+    transform: scale(1)
+    transition-duration: 1s
+    @media (max-width: 992px)
+      height: 150px
+  &:hover
+    img
+      transform: scale(1.2)
 </style>

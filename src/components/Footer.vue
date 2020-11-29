@@ -264,7 +264,7 @@
     </p>
   </Container>
 
-  <Container class="footer">
+  <Container :animated="false" class="footer">
     <span>© 2020 CARPE DIEM All rights reserved</span>
   </Container>
 </template>
