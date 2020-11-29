@@ -1,20 +1,24 @@
 <template>
   <Container>
     <div class="row">
-      <div class="col-12 pl-0 mb-4">
+      <div class="col-12 mb-4">
         <h1 class="title">{{ title }}</h1>
       </div>
-      <div class="col-12 pl-0 mb-4">
+      <div class="col-12 mb-4">
         <h3 class="text">
           {{ text }}
         </h3>
       </div>
     </div>
     <div class="row">
-      <Carousel :slides="slides" />
+      <div class="col">
+        <Carousel :slides="slides" />
+      </div>
     </div>
     <div class="row mt-5">
-      <slot></slot>
+      <div class="col">
+        <slot></slot>
+      </div>
     </div>
   </Container>
 </template>

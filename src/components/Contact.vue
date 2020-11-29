@@ -26,7 +26,7 @@
       <div class="col-12">
         <h2>Impressum</h2>
       </div>
-      <div class="col-6">
+      <div class="col-xs-12 col-md-6">
         <p>Carpe Diem Blumen und Ambiente GmbH &amp; Co. KG</p>
 
         <p>47709 Krefeld · Lessing Str. 50</p>
@@ -72,7 +72,7 @@
           Rechtsverletzungen werden wir derartige Links umgehend entfernen.
         </p>
       </div>
-      <div class="col-6">
+      <div class="col-xs-12 col-md-6">
         <p>
           <strong>Urheberrecht</strong><br />Die durch die Seitenbetreiber
           erstellten Inhalte und Werke auf diesen Seiten unterliegen dem

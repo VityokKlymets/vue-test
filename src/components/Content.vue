@@ -1,7 +1,7 @@
 <template>
   <Container>
     <div class="row pb-4">
-      <div class="col-6">
+      <div class="col-xs-12 col-md-6">
         <h2>Liebe Kunden</h2>
         <p>
           Leidenschaft und Tradition verpflichten. Seit Jahrzehnten sind wir
@@ -44,7 +44,7 @@
           >
         </p>
       </div>
-      <div class="col-6">
+      <div class="col-xs-12 col-md-6">
         <Image
           src="http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_fleurop-de.jpg"
           :width="238"

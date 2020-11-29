@@ -26,6 +26,7 @@ export default defineComponent({
 .container-fluid
   padding: 40px 0
 .container
-  padding: 0
+  @media (min-width:992px)
+    padding: 0
 </style>
 

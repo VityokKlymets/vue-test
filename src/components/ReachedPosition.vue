@@ -17,10 +17,13 @@ export default defineComponent({
     onClick: Function,
   },
   setup: (props) => {
-    const { positionY = 0, reachedClass, class: className } = toRefs(props);
+    const { positionY, reachedClass, class: className } = toRefs(props);
     const isReached = ref(false);
+
     const handleScroll = () => {
-      isReached.value = scrollY > positionY;
+      if (positionY?.value) {
+        isReached.value = scrollY > positionY.value;
+      }
     };
 
     onMounted(() => {

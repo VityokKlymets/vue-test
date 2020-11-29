@@ -80,6 +80,10 @@ export default TopHeader;
     z-index: 2
     background-color: #000000
     transition-duration: .5s
+  &.header_compressed
+    padding: 18px 33px
+    .logo__image
+      height: 20px
 
 .logo__image
   height: 55px
@@ -131,9 +135,4 @@ export default TopHeader;
   &:hover
     color: gray
     text-decoration: none
-
-.header_compressed
-  padding: 18px 33px
-  .logo__image
-    height: 20px
 </style>

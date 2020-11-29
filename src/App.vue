@@ -13,13 +13,14 @@
   >
   </TopHeader>
   <ParallaxImage
-    :containerHeight="906"
+    :responsive="{ 0: { height: 332 }, 992: { height: 906 } }"
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/1.jpg"
   >
     <Title />
   </ParallaxImage>
   <Content />
   <ParallaxImage
+    :responsive="{ 0: { height: 300 }, 992: { height: 492 } }"
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/2.jpg"
   />
   <SlidesSection
@@ -48,6 +49,7 @@
     </p>
   </SlidesSection>
   <ParallaxImage
+    :responsive="{ 0: { height: 300 }, 992: { height: 492 } }"
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/3.jpg"
   />
   <SlidesSection
@@ -76,6 +78,7 @@
     </p>
   </SlidesSection>
   <ParallaxImage
+    :responsive="{ 0: { height: 300 }, 992: { height: 492 } }"
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/4.jpg"
   />
 
@@ -105,6 +108,7 @@
     </p>
   </SlidesSection>
   <ParallaxImage
+    :responsive="{ 0: { height: 300 }, 992: { height: 492 } }"
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/5.jpg"
   />
   <SlidesSection
@@ -133,25 +137,27 @@
     </p>
   </SlidesSection>
   <Container>
-    <div class="row justify-content-center">
-      <iframe
-        title="Adventskranz - außergewöhnlich und individuell selber machen"
-        width="500"
-        height="281"
-        src="https://www.youtube.com/embed/XMGNvZ9VBjc?feature=oembed"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen=""
-      ></iframe>
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <iframe
+          title="Adventskranz - außergewöhnlich und individuell selber machen"
+          width="500"
+          height="281"
+          src="https://www.youtube.com/embed/XMGNvZ9VBjc?feature=oembed"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen=""
+        ></iframe>
+      </div>
     </div>
   </Container>
   <ParallaxImage
+    :responsive="{ 0: { height: 300 }, 992: { height: 492 } }"
     imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/6.jpg"
   />
   <Contact />
   <Footer />
   <ScrollTopBtn />
-  
 </template>
 
 <script lang="ts">
