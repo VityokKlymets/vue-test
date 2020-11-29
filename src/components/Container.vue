@@ -1,5 +1,6 @@
 <template>
   <div
+    :id="id"
     :class="[
       className,
       'container-fluid',
@@ -24,6 +25,7 @@ export default defineComponent({
       type: Boolean,
       default: true,
     },
+    id: String,
   },
   setup: (props) => {
     const { class: className } = toRefs(props);

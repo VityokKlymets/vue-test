@@ -2,8 +2,8 @@
 <template>
   <div class="title-wrapper">
     <div class="title">
-      <h1>Blumen sind das Lächeln der Erde.</h1>
-      <h3>Ralph Waldo Emerson</h3>
+      <h1>{{ titleText }}</h1>
+      <h3>{{ subtitleText }}</h3>
     </div>
   </div>
 </template>
@@ -13,6 +13,10 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Title",
+  props: {
+    titleText: String,
+    subtitleText: String,
+  },
 });
 </script>
 <style lang="sass" scoped>
@@ -42,5 +46,4 @@ h3
     font-size: 4rem
   h3
     font-size: 3rem
-  
 </style>

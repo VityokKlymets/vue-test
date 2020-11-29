@@ -1,141 +1,38 @@
 <template>
-  <TopHeader
-    logoImage="http://blumen.varion.net/wp-content/uploads/2020/11/Logo_Carpe-Diem_Website-2-uai-720x212-1.png"
-    :links="[
-      { href: '#hochzeit', text: 'Hochzeit' },
-      { href: '#trauerfloristik', text: 'Trauerfloristik' },
-      { href: '#wohnambiente', text: 'Wohnambiente' },
-      { href: '#advent', text: 'Advent' },
-      { href: '#kontakt', text: 'Kontakt & Anfahrt' },
-      { href: '#impressum', text: 'Impressum' },
-      { href: '#datenschutz', text: 'Datenschutz' },
-    ]"
-  >
+  <TopHeader :logoImage="data.header.logoImage" :links="data.header.links">
   </TopHeader>
+
   <ParallaxImage
     :responsive="{ 0: { height: 332 }, 992: { height: 906 } }"
-    imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/1.jpg"
+    :imageSrc="data.title.parallaxImage"
   >
-    <Title />
+    <Title
+      :titleText="data.title.titleText"
+      :subtitleText="data.title.subtitleText"
+    />
   </ParallaxImage>
-  <Content />
-  <ParallaxImage
-    :responsive="{ 0: { height: 300 }, 992: { height: 492 } }"
-    imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/2.jpg"
-  />
-  <SlidesSection
-    title="Hochzeit"
-    text="Festliche Arrangements rund ums Jawort"
-    :slides="[
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0243.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0244.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0301.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_Haarkranz.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_flowers-5093757_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/flower-3185225_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_wedding-5631610_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0043.jpg',
-    ]"
-  >
-    <p>
-      Für den schönsten Tag im Leben binden wir für jeden Anspruch und Geschmack
-      das wichtigste Accessoire einer Hochzeit: Den Brautstrauß. Mit dem
-      Brautstrauß wird nicht nur die Braut stilvoll in Szene gesetzt: Passend
-      zum Brautstrauß fertigen wir das Anstecksträußchen für den Bräutigam, das
-      Fahrzeugbukett, die Kirchen- und Tischdekoration. Gerne beraten wir Sie.
-      Damit Ihre Hochzeit der schönste Tag in Ihrem Leben wird.
-    </p>
-  </SlidesSection>
-  <ParallaxImage
-    :responsive="{ 0: { height: 300 }, 992: { height: 492 } }"
-    imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/3.jpg"
-  />
-  <SlidesSection
-    title="Trauerfloristik"
-    text="Stilvoll Abschied nehmen"
-    :slides="[
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0243.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0244.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0301.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_Haarkranz.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_flowers-5093757_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/flower-3185225_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_wedding-5631610_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0043.jpg',
-    ]"
-  >
-    <p>
-      Für den schönsten Tag im Leben binden wir für jeden Anspruch und Geschmack
-      das wichtigste Accessoire einer Hochzeit: Den Brautstrauß. Mit dem
-      Brautstrauß wird nicht nur die Braut stilvoll in Szene gesetzt: Passend
-      zum Brautstrauß fertigen wir das Anstecksträußchen für den Bräutigam, das
-      Fahrzeugbukett, die Kirchen- und Tischdekoration. Gerne beraten wir Sie.
-      Damit Ihre Hochzeit der schönste Tag in Ihrem Leben wird.
-    </p>
-  </SlidesSection>
-  <ParallaxImage
-    :responsive="{ 0: { height: 300 }, 992: { height: 492 } }"
-    imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/4.jpg"
-  />
 
-  <SlidesSection
-    title="Wohnambiente"
-    text="Unsere Ideen für Ihr Zuhause"
-    :slides="[
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0243.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0244.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0301.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_Haarkranz.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_flowers-5093757_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/flower-3185225_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_wedding-5631610_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0043.jpg',
-    ]"
+  <Content />
+
+  <section
+    :id="title"
+    v-for="(
+      { parallaxImage, slideSection: { title, subtitle, text, slides } }, index
+    ) in data.sections"
+    :key="index"
   >
-    <p>
-      Für den schönsten Tag im Leben binden wir für jeden Anspruch und Geschmack
-      das wichtigste Accessoire einer Hochzeit: Den Brautstrauß. Mit dem
-      Brautstrauß wird nicht nur die Braut stilvoll in Szene gesetzt: Passend
-      zum Brautstrauß fertigen wir das Anstecksträußchen für den Bräutigam, das
-      Fahrzeugbukett, die Kirchen- und Tischdekoration. Gerne beraten wir Sie.
-      Damit Ihre Hochzeit der schönste Tag in Ihrem Leben wird.
-    </p>
-  </SlidesSection>
-  <ParallaxImage
-    :responsive="{ 0: { height: 300 }, 992: { height: 492 } }"
-    imageSrc="http://blumen.varion.net/wp-content/uploads/2020/10/5.jpg"
-  />
-  <SlidesSection
-    title="Advent"
-    text="Schöne Kränze und Gestecke zur Vorweihnachtszeit"
-    :slides="[
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0243.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0244.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0301.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_Haarkranz.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_flowers-5093757_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/flower-3185225_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_wedding-5631610_1280.jpg',
-      'http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0043.jpg',
-    ]"
-  >
-    <p>
-      Für den schönsten Tag im Leben binden wir für jeden Anspruch und Geschmack
-      das wichtigste Accessoire einer Hochzeit: Den Brautstrauß. Mit dem
-      Brautstrauß wird nicht nur die Braut stilvoll in Szene gesetzt: Passend
-      zum Brautstrauß fertigen wir das Anstecksträußchen für den Bräutigam, das
-      Fahrzeugbukett, die Kirchen- und Tischdekoration. Gerne beraten wir Sie.
-      Damit Ihre Hochzeit der schönste Tag in Ihrem Leben wird.
-    </p>
-  </SlidesSection>
+    <ParallaxImage
+      :responsive="{ 0: { height: 300 }, 992: { height: 492 } }"
+      :imageSrc="parallaxImage"
+    />
+    <SlidesSection
+      :title="title"
+      :slides="slides"
+      :subtitle="subtitle"
+      :text="text"
+    />
+  </section>
+
   <Container>
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
@@ -163,19 +60,27 @@
 <script lang="ts">
 import { defineComponent, onMounted } from "vue";
 
-import ParallaxImage from "./components/ParallaxImage.vue";
-import TopHeader from "./components/TopHeader.vue";
-import Title from "./components/Title.vue";
-import Content from "./components/Content.vue";
-import SlidesSection from "./components/SlidesSection.vue";
-import Container from "./components/Container.vue";
-import Contact from "./components/Contact.vue";
-import Footer from "./components/Footer.vue";
-import ScrollTopBtn from "./components/ScrollTopBtn.vue";
+import ParallaxImage from "@/components/ParallaxImage.vue";
+import TopHeader from "@/components/TopHeader.vue";
+import Title from "@/components/Title.vue";
+import Content from "@/components/Content.vue";
+import SlidesSection from "@/components/SlidesSection.vue";
+import Container from "@/components/Container.vue";
+import Contact from "@/components/Contact.vue";
+import Footer from "@/components/Footer.vue";
+import ScrollTopBtn from "@/components/ScrollTopBtn.vue";
 
 // @ts-ignore
-import WOW from 'wow.js'
+import WOW from "wow.js";
 
+import data from "@/data.json";
+
+interface IAppData {
+  header: {
+    links: String[];
+    logoImage: String;
+  };
+}
 export default defineComponent({
   name: "App",
   components: {
@@ -189,11 +94,12 @@ export default defineComponent({
     Footer,
     ScrollTopBtn,
   },
-  setup:()=>{
-    onMounted(()=>{
-       new WOW().init();
-    })
-  }
+  setup: () => {
+    onMounted(() => {
+      new WOW().init();
+    });
+    return { data };
+  },
 });
 </script>
 

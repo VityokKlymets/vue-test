@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <Container id="Kontakt">
     <h1>Kontakt &amp; Anfahrt</h1>
     <h2>Wir freuen uns auf Sie</h2>
 
@@ -21,7 +21,7 @@
       >
     </p>
   </Container>
-  <Container>
+  <Container id="Impressum">
     <div class="row">
       <div class="col-12">
         <h2>Impressum</h2>

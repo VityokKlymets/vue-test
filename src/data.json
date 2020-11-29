@@ -1,0 +1,103 @@
+{
+  "header": {
+    "links": [
+      { "href": "#Hochzeit", "text": "Hochzeit" },
+      { "href": "#Trauerfloristik", "text": "Trauerfloristik" },
+      { "href": "#Wohnambiente", "text": "Wohnambiente" },
+      { "href": "#Advent", "text": "Advent" },
+      { "href": "#Kontakt", "text": "Kontakt & Anfahrt" },
+      { "href": "#Impressum", "text": "Impressum" },
+      { "href": "#Datenschutz", "text": "Datenschutz" }
+    ],
+    "logoImage": "http://blumen.varion.net/wp-content/uploads/2020/11/Logo_Carpe-Diem_Website-2-uai-720x212-1.png"
+  },
+
+  "title": {
+    "titleText": "Blumen sind das Lächeln der Erde.",
+    "subtitleText": "Ralph Waldo Emerson",
+    "parallaxImage": "http://blumen.varion.net/wp-content/uploads/2020/10/1.jpg"
+  },
+
+  "sections": [
+    {
+      "slideSection": {
+        "title": "Hochzeit",
+        "subtitle": "Festliche Arrangements rund ums Jawort",
+        "text": "Für den schönsten Tag im Leben binden wir für jeden Anspruch und Geschmack das wichtigste Accessoire einer Hochzeit: Den Brautstrauß. Mit dem Brautstrauß wird nicht nur die Braut stilvoll in Szene gesetzt: Passend zum Brautstrauß fertigen wir das Anstecksträußchen für den Bräutigam, das Fahrzeugbukett, die Kirchen- und Tischdekoration. Gerne beraten wir Sie. Damit Ihre Hochzeit der schönste Tag in Ihrem Leben wird.",
+        "slides": [
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0243.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0244.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0301.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_Haarkranz.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_flowers-5093757_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/flower-3185225_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_wedding-5631610_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0043.jpg"
+        ]
+      },
+      "parallaxImage": "http://blumen.varion.net/wp-content/uploads/2020/10/2.jpg"
+    },
+    {
+      "slideSection": {
+        "title": "Trauerfloristik",
+        "subtitle": "Stilvoll Abschied nehmen",
+        "text": "Auch im Trauerfall stehen wir Ihnen zur Seite. Mit unserer stilvollen Trauerfloristik, egal ob Sie sich für ein Trauergesteck, ein Trauergebinde oder einen Trauerkranz entscheiden, drücken Sie Ihr Mitgefühl aus und erweisen dem Verstorbenen eine letzte Ehre. Alle Ihre Wünsche – oft auch Wünsche des Verstorbenen – hinsichtlich der Gestaltung der Trauerfloristik finden bei uns Berücksichtigung. Selbstverständlich schmücken wir auch die Aussegnungshalle aus. Auch hier gilt unser Versprechen von höchstmöglicher Qualität und Frische.",
+        "slides": [
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0243.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0244.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0301.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_Haarkranz.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_flowers-5093757_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/flower-3185225_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_wedding-5631610_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0043.jpg"
+        ]
+      },
+      "parallaxImage": "http://blumen.varion.net/wp-content/uploads/2020/10/3.jpg"
+    },
+    {
+      "slideSection": {
+        "title": "Wohnambiente",
+        "subtitle": "Unsere Ideen für Ihr Zuhause",
+        "text": "Sie suchen schöne Deko-Ideen für Ihr Zuhause, Ihre Büroräume oder Ihre Praxis? Je nach Jahreszeit haben wir wechselnde Themen und bieten Ihnen dazu trendige und ansprechende Blumenarrangements an, natürlich täglich frisch zusammengestellt. Kleinere Deko-Gegenstände haben wir passend dazu im Sortiment. Gerne setzen wir auch Ihre eigenen Ideen zur Verschönerung Ihrer Räumlichkeiten um. Mit einer stilvollen Blumendekoration wird Ihr Zuhause angenehm gemütlich und der Empfang im Büro oder der Praxis ist einladend und freundlich gestaltet.",
+        "slides": [
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0243.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0244.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0301.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_Haarkranz.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_flowers-5093757_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/flower-3185225_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_wedding-5631610_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0043.jpg"
+        ]
+      },
+      "parallaxImage": "http://blumen.varion.net/wp-content/uploads/2020/10/4.jpg"
+    },
+    {
+      "slideSection": {
+        "title": "Advent",
+        "subtitle": "Schöne Kränze und Gestecke zur Vorweihnachtszeit",
+        "text": "Jedes Jahr im November läuten wir die gemütliche Vorweihnachtszeit mit einer Adventsausstellung in unseren Räumen ein. Nicht nur an diesem Wochenende können Sie unsere anspruchsvollen, eleganten, romantischen, rustikalen und klassischen Adventskränze bestaunen und auch erwerben. Weihnachtliche Dekorationsartikel und diverse Kerzen farblich aufeinander abgestimmt runden unser Sortiment ab. Sie haben individuelle Wünsche für einen Adventskranz? Auch kein Problem! Unsere erfahrenen Floristen werden Ihre Vorstellungen in ein stimmungsvolles Arrangement umsetzen.",
+        "slides": [
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0190.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0196.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0243.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0244.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0301.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_Haarkranz.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_flowers-5093757_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/flower-3185225_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2020_11_wedding-5631610_1280.jpg",
+          "http://blumen.varion.net/wp-content/uploads/2020/11/https___www.blumen-ambiente.eu_wp-content_uploads_2016_05_Carpe-Diem-Hochzeit-0043.jpg"
+        ]
+      },
+      "parallaxImage": "http://blumen.varion.net/wp-content/uploads/2020/10/5.jpg"
+    }
+  ]
+}
